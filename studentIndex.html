@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement Management Application</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <center>
+        <h1>Placement Management</h1>
+        <h2>
+            <a href="studentlist.html">
+                <button type="button" class="btn btn-primary">Display All Students</button>
+            </a>
+        </h2>
+    </center>
+
+    <a href="AdminDashboard.html">
+        <button type="button" class="btn btn-primary">Dashboard</button>
+    </a>
+
+    <div align="center">
+        <!-- Form for adding/updating student -->
+        <form action="studentinsert.html" method="post">
+            <table border="1" cellpadding="5">
+                <h2>Add New Student</h2>
+                <!-- Placeholder values for testing -->
+                <tr>
+                    <th>Student Name: </th>
+                    <td><input type="text" class="form-control" required name="name" size="45" value="John Doe" /></td>
+                </tr>
+                <tr>
+                    <th>Student College: </th>
+                    <td><input type="text" class="form-control" required name="college" size="45" value="XYZ University" /></td>
+                </tr>
+                <tr>
+                    <th>Student Roll: </th>
+                    <td><input type="text" class="form-control" required name="roll" size="45" value="123456" /></td>
+                </tr>
+                <tr>
+                    <th>Student Qualification: </th>
+                    <td><input type="text" class="form-control" required name="qualification" size="45" value="B.Tech" /></td>
+                </tr>
+                <tr>
+                    <th>Student Course: </th>
+                    <td><input type="text" class="form-control" required name="course" size="45" value="Computer Science" /></td>
+                </tr>
+                <tr>
+                    <th>Student Year: </th>
+                    <td><input type="text" class="form-control" required name="year" size="45" value="2024" /></td>
+                </tr>
+                <tr>
+                    <th>Student Certificate: </th>
+                    <td><input type="text" class="form-control" required name="certificate" size="45" value="Certified" /></td>
+                </tr>
+                <tr>
+                    <th>Student Hallticket Number: </th>
+                    <td><input type="text" class="form-control" required name="hallTicketNo" size="15" value="HT123456" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <button type="submit" class="btn btn-success">Save</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>    
+</body>
+</html>

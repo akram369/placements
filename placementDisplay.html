@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement Management Application</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <center>
+        <h1>Placement Management</h1>
+    </center>
+    <a href="AdminDashboard.html">
+        <button type="button" class="btn btn-primary">Dashboard</button>
+    </a>
+    <div align="center" class="table">
+        <table border="1" cellpadding="5" class="table-bordered">
+            <h2>List of Placements</h2>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">College</th>
+                <th scope="col">Date</th>
+                <th scope="col">Qualification</th>
+                <th scope="col">Year</th>
+                <th scope="col">Operations</th>
+            </tr>
+            <!-- Replace the static rows below with server-side rendering or JS-generated rows -->
+            <tr>
+                <td>1</td>
+                <td>John Doe</td>
+                <td>ABC College</td>
+                <td>2024-12-01</td>
+                <td>B.Tech</td>
+                <td>2024</td>
+                <td>
+                    <a href="placement?action=placementedit&id=1">
+                        <button type="button" class="btn btn-warning">Edit</button>
+                    </a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="placement?action=placementdelete&id=1">
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Jane Smith</td>
+                <td>XYZ University</td>
+                <td>2024-12-10</td>
+                <td>MBA</td>
+                <td>2024</td>
+                <td>
+                    <a href="placement?action=placementedit&id=2">
+                        <button type="button" class="btn btn-warning">Edit</button>
+                    </a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="placement?action=placementdelete&id=2">
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <h2 align="center">
+        <a href="placement?action=placementnew">
+            <button type="button" class="btn btn-info">Add New Placement</button>
+        </a>
+    </h2>
+</body>
+</html>

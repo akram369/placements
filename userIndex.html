@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement Management Application</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"> <!-- Assuming the CSS is in a separate file -->
+</head>
+<body>
+    <center>
+        <h1>Placement Management</h1>
+        <h2>
+            <a href="user?action=ulist"><button type="button" class="btn btn-primary">Display All Users</button></a>
+        </h2>
+    </center>
+    <a href="AdminDashboard.html"><button type="button" class="btn btn-primary">Dashboard</button></a>
+    <div align="center">
+        <!-- Static form for adding/updating users -->
+        <form action="user?action=uinsert" method="post">  <!-- Default action for adding new user -->
+            <table border="1" cellpadding="5">
+                <h2>Add New User</h2>
+
+                <input type="hidden" name="id" value="USER_ID_PLACEHOLDER" /> <!-- Replace with actual ID if editing -->
+
+                <tr>
+                    <th>User Name:</th>
+                    <td><input type="text" class="form-control" required name="name" size="45" value="USER_NAME_PLACEHOLDER" /></td>
+                </tr>
+                <tr>
+                    <th>User Password:</th>
+                    <td><input type="text" class="form-control" required name="password" size="45" value="USER_PASSWORD_PLACEHOLDER" /></td>
+                </tr>
+                <tr>
+                    <th>User Type:</th>
+                    <td><input type="text" class="form-control" required name="type" size="45" value="USER_TYPE_PLACEHOLDER" /></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" align="center">
+                        <button type="submit" class="btn btn-success">Save</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

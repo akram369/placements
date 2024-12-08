@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement Management Application</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <center>
+        <h1>Placement Management</h1>
+        <h2>
+            <a href="college?action=list">
+                <button type="button" class="btn btn-primary">Display All Colleges</button>
+            </a>
+        </h2>
+    </center>
+    <a href="AdminDashboard.html">
+        <button type="button" class="btn btn-primary">Dashboard</button>
+    </a>
+    <div align="center">
+        <!-- Form for Adding or Editing a College -->
+        <form action="college?action=insertOrUpdate" method="post">
+            <table border="1" cellpadding="5">
+                <h2>
+                    <!-- Placeholder for Add/Edit Title -->
+                    Add or Edit College
+                </h2>
+                <!-- Hidden ID Field for Editing -->
+                <input type="hidden" name="id" value="ID Placeholder" />
+                <tr>
+                    <th>College Admin:</th>
+                    <td>
+                        <input type="text" class="form-control" required name="collegedmin" size="45" value="Admin Name Placeholder" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>College Name:</th>
+                    <td>
+                        <input type="text" class="form-control" required name="collegename" size="45" value="College Name Placeholder" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>College Location:</th>
+                    <td>
+                        <input type="text" class="form-control" required name="location" size="45" value="Location Placeholder" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <button type="submit" class="btn btn-success">Save</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

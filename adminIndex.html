@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Placement Management Application</title>
+</head>
+<body>
+    <center>
+        <h1>Placement Management</h1>
+        <h2>
+            <a href="Admin?action=Adminlist">
+                <button type="button" class="btn btn-primary">Display All Admins</button>
+            </a>
+        </h2>
+    </center>
+    <a href="AdminDashboard.html">
+        <button type="button" class="btn btn-primary">Dashboard</button>
+    </a>
+    <div align="center">
+        <!-- Replace the form action and method with appropriate static examples -->
+        <form action="Admin?action=Admininsert" method="post">
+            <table border="1" cellpadding="5">
+                <h2>Add New Admin</h2>
+                <!-- Hidden input for edit form (shown as an example) -->
+                <!-- <input type="hidden" name="id" value="1" /> -->
+                <tr>
+                    <th>Admin Name:</th>
+                    <td>
+                        <input type="text" class="form-control" required name="name" size="45" value="John Doe" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>Admin Password:</th>
+                    <td>
+                        <input type="text" class="form-control" required name="password" size="45" value="password123" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <button type="submit" class="btn btn-success">Save</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

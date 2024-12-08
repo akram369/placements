@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Placement Management Application</title>
+</head>
+<body>
+    <center>
+        <h1>Placement Management</h1>
+    </center>
+    <a href="AdminDashboard.html">
+        <button type="button" class="btn btn-primary">Dashboard</button>
+    </a>
+    <div align="center" class="table">
+        <table border="1" cellpadding="5" class="table-bordered">
+            <h2>List of Colleges</h2>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">College Admin</th>
+                <th scope="col">College Name</th>
+                <th scope="col">Location</th>
+                <th scope="col">Operations</th>
+            </tr>
+            <!-- Example rows; replace with dynamic content in JSP -->
+            <tr>
+                <td>1</td>
+                <td>Admin 1</td>
+                <td>College A</td>
+                <td>Location A</td>
+                <td>
+                    <a href="college?action=edit&id=1">
+                        <button type="button" class="btn btn-warning">Edit</button>
+                    </a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="college?action=delete&id=1">
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Admin 2</td>
+                <td>College B</td>
+                <td>Location B</td>
+                <td>
+                    <a href="college?action=edit&id=2">
+                        <button type="button" class="btn btn-warning">Edit</button>
+                    </a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="college?action=delete&id=2">
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <h2 align="center">
+        <a href="college?action=new">
+            <button type="button" class="btn btn-info">Add New College</button>
+        </a>
+    </h2>
+</body>
+</html>

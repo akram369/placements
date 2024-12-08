@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement Management Application</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <center>
+        <h1>Placement Management</h1>
+    </center>
+    <a href="AdminDashboard.html">
+        <button type="button" class="btn btn-primary">Dashboard</button>
+    </a>
+    <div align="center" class="table">
+        <table border="1" cellpadding="5" class="table-bordered">
+            <h2>List of Students</h2>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>College</th>
+                <th>Roll</th>
+                <th>Qualification</th>
+                <th>Course</th>
+                <th>Year</th>
+                <th>Certificate</th>
+                <th>Hall Ticket No</th>
+                <th>Operations</th>
+            </tr>
+            <!-- Example static data row, replace with dynamic data if needed -->
+            <tr>
+                <td>1</td>
+                <td>John Doe</td>
+                <td>ABC College</td>
+                <td>12345</td>
+                <td>Bachelor's</td>
+                <td>Computer Science</td>
+                <td>2024</td>
+                <td>Yes</td>
+                <td>HT123456</td>
+                <td>
+                    <a href="student-edit.html?id=1">
+                        <button type="button" class="btn btn-warning">Edit</button>
+                    </a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="student-delete.html?id=1">
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </a>
+                </td>
+            </tr>
+            <!-- Repeat above row for other students as needed -->
+        </table>
+    </div>
+    <br>
+    <h2 align="center">
+        <a href="student-new.html">
+            <button type="button" class="btn btn-info">Add New Student</button>
+        </a>
+    </h2>
+</body>
+</html>

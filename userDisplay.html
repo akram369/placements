@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement Management Application</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <center>
+        <h1>Placement Management</h1>
+    </center>
+
+    <a href="AdminDashboard.html">
+        <button type="button" class="btn btn-primary">Dashboard</button>
+    </a>
+
+    <div align="center">
+        <table border="1" cellpadding="5">
+            <h2>List of Users</h2>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Password</th>
+                <th>Type</th>
+                <th>Operations</th>
+            </tr>
+            
+            <!-- Static content for testing -->
+            <tr>
+                <td>1</td>
+                <td>John Doe</td>
+                <td>password123</td>
+                <td>Admin</td>
+                <td>
+                    <a href="useredit.html?id=1">
+                        <button type="button" class="btn btn-warning">Edit</button>
+                    </a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="userdelete.html?id=1">
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Jane Smith</td>
+                <td>password456</td>
+                <td>User</td>
+                <td>
+                    <a href="useredit.html?id=2">
+                        <button type="button" class="btn btn-warning">Edit</button>
+                    </a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="userdelete.html?id=2">
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </a>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+
+    <br>
+    <h2 align="center">
+        <a href="useradd.html">
+            <button type="button" class="btn btn-info">Add New User</button>
+        </a>
+    </h2>
+</body>
+</html>

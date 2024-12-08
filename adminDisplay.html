@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Placement Management Application</title>
+</head>
+<body>
+    <center>
+        <h1>Placement Management</h1>
+    </center>
+    <a href="AdminDashboard.html">
+        <button type="button" class="btn btn-primary">Dashboard</button>
+    </a>
+    <div align="center" class="table">
+        <table border="1" cellpadding="5" class="table-bordered">
+            <h2>List of Admins</h2>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Password</th>
+                <th scope="col">Operations</th>
+            </tr>
+            <!-- Sample static rows -->
+            <tr>
+                <td>1</td>
+                <td>John Doe</td>
+                <td>password123</td>
+                <td>
+                    <a href="Admin?action=Adminedit&id=1">
+                        <button type="button" class="btn btn-warning">Edit</button>
+                    </a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="Admin?action=Admindelete&id=1">
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Jane Smith</td>
+                <td>admin@123</td>
+                <td>
+                    <a href="Admin?action=Adminedit&id=2">
+                        <button type="button" class="btn btn-warning">Edit</button>
+                    </a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="Admin?action=Admindelete&id=2">
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <h2 align="center">
+        <a href="Admin?action=Adminnew">
+            <button type="button" class="btn btn-info">Add New Admin</button>
+        </a>
+    </h2>
+</body>
+</html>

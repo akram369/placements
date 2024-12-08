@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Placement Management Application</title>
+</head>
+<body>
+    <center>
+        <h1>Placement Management</h1>
+        <h2>
+            <a href="certificate?action=certificatelist">
+                <button type="button" class="btn btn-primary">Display All Certificates</button>
+            </a>
+        </h2>
+    </center>
+    <a href="AdminDashboard.html">
+        <button type="button" class="btn btn-primary">Dashboard</button>
+    </a>
+    <div align="center">
+        <!-- Example form for adding or editing certificates -->
+        <form action="certificate?action=certificateinsert" method="post">
+            <table border="1" cellpadding="5">
+                <h2>Add New Certificate</h2>
+                <!-- Use 'Edit Certificate' as title when editing -->
+                <tr>
+                    <th>Certificate Year:</th>
+                    <td>
+                        <input type="text" class="form-control" required name="year" size="45" value="2024" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>Certificate College:</th>
+                    <td>
+                        <input type="text" class="form-control" required name="college" size="45" value="ABC College" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <button type="submit" class="btn btn-success">Save</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

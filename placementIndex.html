@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement Management Application</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <center>
+        <h1>Placement Management</h1>
+        <h2>
+            <a href="placement-list.html">
+                <button type="button" class="btn btn-primary">Display All Placements</button>
+            </a>
+        </h2>
+    </center>
+    <a href="AdminDashboard.html">
+        <button type="button" class="btn btn-primary">Dashboard</button>
+    </a>
+    <div align="center">
+        <!-- Assuming we are adding a new placement (no data bound) -->
+        <form action="placement-insert.html" method="post">
+            <table border="1" cellpadding="5">
+                <h2>Add New Placement</h2>
+
+                <tr>
+                    <th>Placement Name:</th>
+                    <td><input type="text" class="form-control" required name="name" size="45" value="" /></td>
+                </tr>
+                <tr>
+                    <th>Placement College:</th>
+                    <td><input type="text" class="form-control" required name="college" size="45" value="" /></td>
+                </tr>
+                <tr>
+                    <th>Placement Date:</th>
+                    <td><input type="text" class="form-control" required name="date" size="45" value="" /></td>
+                </tr>
+                <tr>
+                    <th>Placement Qualification:</th>
+                    <td><input type="text" class="form-control" required name="qualification" size="45" value="" /></td>
+                </tr>
+                <tr>
+                    <th>Placement Year:</th>
+                    <td><input type="text" class="form-control" required name="year" size="45" value="" /></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" align="center"><button type="submit" class="btn btn-success">Save</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
